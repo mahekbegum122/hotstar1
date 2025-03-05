@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* scrollbar-width: none; */
+        }
+        .container{
+            width: 100vw; 
+            /* height: 100vh; */
+            background-color: black;
+        }
+        nav{
+            width: 7vw;
+            height: 100vh;
+            background-color:black;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            /* border-right: 2px solid white; */
+        }
+        .main-sec{
+            width: 95vw;
+            /* min-height: 100vh; */
+            /* background-color: gray; */
+            float: right;
+            /* margin-right: 17px; */
+        }
+        .sec-1{
+            width: 90%;
+            height: 290px;
+            /* background-color: brown; */
+            border-radius: 10px;
+            margin-top: 20px;
+             margin-left: 80px;
+             display: flex; 
+            flex-direction: row; 
+        }
+        
+
+        body{
+            background-color: #000000;
+        }
+        .sec-2{
+            min-height: 120vh;
+            width: 95%;
+        
+            /* background-color: lightblue; */
+            margin: 10px 0px;           
+        }
+        .img{
+            width: 60%;
+            height:100%;
+
+            /* background-color: aqua; */
+        }
+        .imgg{
+            width:75%;
+            height:100%;
+            /* background-color:rgb(245, 222, 178); */
+            /* display: flex; */
+            flex-direction: row; 
+            /* margin-top: 30px; */
+        }
+        .dare{
+            width: 480px;
+            height: 230px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+        .jio{
+            width:60px;
+            height: 60px;
+            /* margin-top: 100px; */
+            border-radius: 8px;
+            margin-top: 60px;
+            display: flex;
+            /* justify-content: center; */
+            flex-direction: row;
+        }
+        .a{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .b{
+            display: flex;
+            flex-direction: row;
+            color: white;
+            /* justify-content: center; */
+            /* align-items: center; */
+            /* margin-left: 30px; */
+        }
+        .c{
+            display: flex;
+            color: white;
+            /* justify-content: space-between; */
+            flex-direction: row;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+        .zz{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .font{
+            margin-top: 60px;
+            margin-left: 10px;
+        }
+        .para{
+            margin-top: 3px;
+            gap:10px;
+            color: white;
+        }
+        .btn{
+            width: 180px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 10px;
+            /* margin-left: 5px; */
+            font-size: 20px;
+            font-weight: 40px;
+            background-color: rgb(209, 187, 187);
+            color:white;
+            cursor: pointer;
+        }
+        .navv{
+            width: 70px;
+            height:70px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 20px; 
+            font-size: 23px;
+            gap: 40px;
+            /* margin-left: 5px; */
+        }
+        .n{
+            width: 60px;
+            height:60px;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 290px; 
+            font-size: 22px;
+            gap: 32px;
+            margin-left: 20px; 
+        }
+
+        .bg{
+            width: 90vw;
+            /* height: 100px; */
+            position: sticky;
+            /* margin-left: 10px; */
+            top: 0;
+        }
+        
+        .sec-2-1{
+            width: 40%;
+            min-height: 350px;
+            /* background-color: blueviolet;  */
+            padding: 30px;
+            display: flex;
+            margin: 20px 0px;
+            align-items: start;
+            justify-content: center;
+    
+            flex-direction: column;
+            /* position: relative;
+            
+            bottom: 300px;
+            left:40px */
+
+        }
+        .title{
+            width: 75%;
+
+
+        }
+        .new{
+            color: blue;
+        }
+        .btn2{
+            width: 300px;
+            height: auto;
+            font-size: 25px;
+            padding:10px ;
+            background: #FC466B;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FC466B,#3F5EFB);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FC466B,#3F5EFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            font-weight: 800px;
+            color:white;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .sec-2-main{
+            position: relative;
+            bottom: 300px;
+            /* left:3.5px ; */
+            cursor: pointer; 
+            background: linear-gradient(to bottom,transparent,#000000,#000000);
+        }
+        .sec-2-2{
+            width: 100%;
+            height: auto;
+            /* background-color: red; */
+            /* margin-right: 10px; */
+            /* margin-right: 10px; */
+            display: flex; 
+            overflow: scroll;
+            align-items: center;
+            padding: 20px;
+            gap:10px;
+            /* margin-left: 10px; */
+            /* margin-right: 10px; */
+            /* scrollbar-width: none; */
+            cursor: pointer;
+            transition: 0.5s all ease;
+            
+        }
+        .btn:hover{
+            background-color: gray;
+        }
+        .m{
+            color: white;
+        }
+        .box{
+            min-width: 175px;
+            margin: 10px 20px;
+            gap:10px;
+
+        }
+        .box:hover{
+            scale: 1.2;
+        }
+        .box img{
+            border-radius: 15px;
+            width: 200px;
+            /* height: 290px; */
+            /* overflow: scroll; */
+            /* padding: 50px; */
+        }
+        .trend{
+            color: white;
+            /* font-size: 20px; */
+            font-weight: 40px;
+            margin-left: 30px;
+        }
+        
+        .bold{
+            font-size: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="navv">
+
+                <img src="hslogo.png" >
+            </div>
+               <div class="n">
+                <i class="fa-solid fa-house"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-tv"></i>
+                <i class="fa-solid fa-chess-queen"></i>
+                <i class="fa-solid fa-person-walking"></i>
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-list"></i>
+                <!-- <i class="fa-solid fa-face-smile"></i> -->
+                <i class="fa-solid fa-circle-user"></i>
+               
+            </div>
+    </nav>
+        <div class="main-sec">
+            <div class="sec-1">
+            <div class="img">
+                 <img src="daredevil.png" class="dare"> 
+            </div>             
+                        <div class="imgg">
+                            <div class="zz">
+                            <img src="jio.png" class="jio">
+                        <div class="font">
+                            <div class="b"><h1>Daredevil</h1></div>
+                        <div class="c"><p>Streaming From March 5</p></div>
+                        </div>
+                    </div>
+                    <div class="para">
+                        <p>
+                            Daredevil's secret life is on the line in this gripping
+                        </p>
+                        <p>
+                            superhero drama !
+                        </p>
+                    </div>
+                    <button class="btn">
+                        Trailer
+                    </button>
+                    </div>
+        </div>
+        <div class="sec-2">
+                <img src="poster.png" class=bg> 
+        <div class="sec-2-main">
+         <div class="sec-2-1">
+                    <img src="movie-title.png" class="title">
+                    <h1 class="new">New Release</h1>
+                    <div class="m">
+                        <p>Vired is ready to build his dream house. But is he </p>
+                    <p>mally to face the hurdes in his path?</p>
+                    </div>
+                    <b class="bold">Romance | comedy</b>
+                    
+                        <button class="btn2">
+                            <i class="fa-solid fa-play"></i>
+                            Watch Now</button>
+                    </div>
+                    <div class=trend>
+                        <h1>
+                            Trending Now
+                        </h1>
+                    </div>
+                <div class="sec-2-2">
+                    <div class="box"> <img src="1"></div>
+                    <div class="box"><img src="4.png"></div>
+                    <div class="box"><img src="10.png"></div>
+                    <div class="box"><img src="11.png"></div> 
+                    <div class="box"><img src="13.png"></div>
+                    <div class="box"><img src="4.png"></div>
+                </div>
+                    <div class=trend>
+                        <h1>
+                            Hindi
+                        </h1>
+                    </div>
+                <div class="sec-2-2">
+                    <div class="box"> <img src="6.png"></div>
+                    <div class="box"><img src="17.png"></div>
+                    <div class="box"><img src="18.png"></div>
+                    <div class="box"><img src="4.png"></div> 
+                    <div class="box"><img src="9.png"></div>
+                    <div class="box"><img src="17.png"></div>
+                </div>
+    
+                <div class=trend>
+                    <h1>
+                        English
+                    </h1>
+                </div>
+            <div class="sec-2-2">
+                <div class="box"> <img src="10.png"></div>
+                <div class="box"><img src="14.png"></div>
+                <div class="box"><img src="3.png"></div>
+                <div class="box"><img src="15.png"></div> 
+                <div class="box"><img src="5.png"></div>
+                <div class="box"><img src="14.png"></div>
+            </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
